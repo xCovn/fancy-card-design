@@ -16,12 +16,12 @@ body {
 h3 {
   color: #fff;
   font-size: 2em;
-
   text-align: center;
   border-bottom: 3px solid transparent;
   border-image: linear-gradient(0.25turn, #ff0058, #4dff03);
   border-image-slice: 1;
   width: 100%;
+  transition: .5s;
 }
 
 .container {
@@ -189,4 +189,14 @@ h3 {
   padding: 10px;
   border-radius: 4px;
   text-decoration: none;
+}
+
+#headline-text {
+  color: #fff;
+}
+
+#changing-text {
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

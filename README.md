@@ -3,6 +3,8 @@
 
 Demo for experimental card design
 
+[Link for live demo](https://xcovn.github.io/fancy-card-design/)
+
 
 ## Authors
 

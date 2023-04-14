@@ -6,11 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Custom Cards</title>
-  <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
-    integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
+    integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="style.css">
-  <script src="scripts.js"></script>
+  <script src="changingText.js"></script>
+  <script src="category.js"></script>
 </head>
+
 <body>
 
   <!-- cards row #1 -->
@@ -20,9 +26,16 @@
     </div>
   </div>
 
+  <div class="container">
+    <div>
+      <button class="btn-category" data-filter="even">even</button>
+      <button class="btn-category" data-filter="odd">odd</button>
+    </div>
+  </div>
+
   <!-- cards first row -->
   <div class="container">
-    <div class="box">
+    <div class="box" data-category="odd">
       <span></span>
       <div class="content">
         <h2>Card Number 1</h2>
@@ -31,7 +44,7 @@
       </div>
     </div>
 
-    <div class="box">
+    <div class="box" data-category="even">
       <span></span>
       <div class="content">
         <h2>Card Number 2</h2>
@@ -40,7 +53,7 @@
       </div>
     </div>
 
-    <div class="box">
+    <div class="box" data-category="odd">
       <span></span>
       <div class="content">
         <h2>Card Number 3</h2>
@@ -48,18 +61,8 @@
         <a href="#">Read more</a>
       </div>
     </div>
-  </div>
 
-  <!-- card row #2 -->
-  <div class="container">
-    <div>
-      <h3>#2 Cards row</h3>
-    </div>
-  </div>
-
-  <!-- card second row -->
-  <div class="container">
-    <div class="box">
+    <div class="box" data-category="even">
       <span></span>
       <div class="content">
         <h2>Card Number 4</h2>
@@ -67,8 +70,8 @@
         <a href="#">Read more</a>
       </div>
     </div>
-  
-    <div class="box">
+
+    <div class="box" data-category="odd">
       <span></span>
       <div class="content">
         <h2>Card Number 5</h2>
@@ -76,8 +79,8 @@
         <a href="#">Read more</a>
       </div>
     </div>
-  
-    <div class="box">
+
+    <div class="box" data-category="even">
       <span></span>
       <div class="content">
         <h2>Card Number 6</h2>
@@ -87,4 +90,5 @@
     </div>
   </div>
 </body>
+
 </html>
